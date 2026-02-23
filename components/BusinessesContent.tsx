@@ -11,7 +11,7 @@ const businesses = [
     category: 'Telecommunications',
     description:
       "Founded in 2003, Globacom emerged as Nigeria's second-largest telecommunications operator. Operating in Nigeria and West Africa, Globacom owns the Glo-1 submarine cable and provides innovative mobile and data services to millions of customers.",
-    image: '/glo_button.png', // Added leading slash
+    image: '/a.jpg', // Technical fix: Using your new image name
     highlights: ['Founded 2003', 'Glo-1 submarine cable', 'Nigeria & West Africa', 'Second-largest telecom'],
   },
   {
@@ -19,7 +19,7 @@ const businesses = [
     category: 'Energy & Oil',
     description:
       'An integrated Nigerian oil and gas company with operations in the Niger Delta. Conoil operates oil blocks and engages in exploration, production, distribution, and retail operations across West Africa.',
-    image: '/co.jpg', // Added leading slash
+    image: '/co.jpg', 
     highlights: ['Niger Delta operations', 'Oil block holdings', 'Integrated operations', 'Regional presence'],
   },
   {
@@ -27,7 +27,7 @@ const businesses = [
     category: 'Strategic Investments',
     description:
       'Beyond core telecommunications and energy, Mike Adenuga maintains documented investments in real estate, infrastructure, and finance. These holdings reflect a disciplined approach to portfolio diversification and long-term value creation.',
-    image: '/des.jpg', // Added leading slash
+    image: '/des.jpg', 
     highlights: ['Real estate assets', 'Infrastructure', 'Finance sector', 'Strategic positioning'],
   },
 ]
