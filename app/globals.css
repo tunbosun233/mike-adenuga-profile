@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Luxury Light Mode - "Premium Parchment" */
+    /* Using 30 20% 97% gives a warm, off-white paper feel */
+    --background: 30 20% 97%; 
+    --foreground: 30 15% 10%;
+    --card: 30 20% 95%;
+    --card-foreground: 30 15% 10%;
+    --popover: 30 20% 97%;
+    --popover-foreground: 30 15% 10%;
+    
+    /* We change the Primary to a deep 'Bronze' so it is readable on the light background */
+    --primary: 30 20% 15%; 
+    --primary-foreground: 45 90% 45%; 
+    
+    --secondary: 140 30% 20%;
+    --secondary-foreground: 30 20% 97%;
+    --muted: 30 10% 90%;
+    --muted-foreground: 30 10% 40%;
+    
+    /* This Gold is slightly deeper for the white background */
+    --accent: 45 80% 45%; 
+    --accent-foreground: 30 20% 10%;
+    
+    --border: 30 10% 85%;
+    --input: 30 10% 92%;
+    --ring: 45 80% 45%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Luxury Dark Mode - "Deep Obsidian" */
+    /* Using 30 10% 4% for a true 'black black' luxury feel */
+    --background: 30 10% 4%; 
+    --foreground: 0 0% 95%;
+    --card: 30 10% 8%;
+    --card-foreground: 0 0% 95%;
+    --popover: 30 10% 8%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 30 10% 15%;
+    --secondary: 140 35% 30%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 30 10% 15%;
+    --muted-foreground: 0 0% 65%;
+    
+    /* Bright Gold for the black background */
+    --accent: 45 100% 55%; 
+    --accent-foreground: 30 10% 10%;
+    
+    --border: 30 10% 15%;
+    --input: 30 10% 12%;
+    --ring: 45 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border transition-colors duration-300; /* Added smooth transition */
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
